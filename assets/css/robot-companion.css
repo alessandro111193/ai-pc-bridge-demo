@@ -1,0 +1,14 @@
+/* Robot companion + conversation, matching approved black/cyan identity */
+.mission-chat{margin:0 0 18px;padding:18px;border:1px solid #3bbffb71;border-radius:16px;background:#0b1b2c;box-shadow:0 15px 45px #0005;color:#f4fbff}
+.mission-chat-heading{display:flex;justify-content:space-between;gap:10px;margin-bottom:16px;color:#75dfff;font:10px Mono,monospace;letter-spacing:.12em}
+.mission-chat-user{margin-left:auto;width:fit-content;max-width:85%;padding:15px 18px;background:#174166;border:1px solid #46bff27a;border-radius:16px 16px 3px 16px;font-size:14px;line-height:1.55}
+.mission-chat-ai{display:flex;gap:12px;align-items:center;margin-top:16px;max-width:88%}
+.mission-chat-avatar{display:grid;place-items:center;flex:none;width:36px;height:36px;border:1px solid #5be0ff;border-radius:50%;color:#5be0ff;background:#07121f;box-shadow:0 0 16px #18c7ff35}
+.mission-chat-ai p{margin:0;padding:14px 18px;border-radius:16px 16px 16px 3px;border:1px solid #3b94c75c;background:#10283e;color:#e7f8ff;font-size:14px}
+.robot-hero-wrap{translate:0 var(--robot-travel,0px);rotate:var(--robot-tilt,0deg);transition:translate .45s ease-out,rotate .45s ease-out}
+.robot-following .robot-hero{filter:drop-shadow(0 15px 24px #000a) drop-shadow(0 0 36px #24bfff77)}
+.robot-busy img{filter:drop-shadow(0 0 18px #16caff88);animation:robot-float 1.9s ease-in-out infinite}
+.robot-success img{filter:drop-shadow(0 0 24px #4cdeffb8)}
+.robot-hero-wrap.robot-docked{position:fixed;top:auto;bottom:16px;right:18px;width:110px;z-index:40;animation:robot-float 4s ease-in-out infinite;translate:0 0;rotate:0deg;filter:drop-shadow(0 5px 20px #000a)}.robot-hero-wrap.robot-docked .robot-speech{display:none}.robot-hero-wrap.robot-docked .robot-hero{width:100%}@media(max-width:600px){.robot-hero-wrap.robot-docked{width:72px;right:8px;bottom:10px;top:auto}.robot-hero-wrap.robot-docked .robot-speech{display:none}}@media(max-width:600px){.mission-chat-user,.mission-chat-ai{max-width:100%}.mission-chat{padding:12px}.mission-chat-heading{font-size:8px}.mission-chat-user,.mission-chat-ai p{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.robot-hero-wrap{transition:none;translate:none;rotate:none}.robot-busy img{animation:none}}
+html.motion-off .robot-hero-wrap{transition:none;translate:none;rotate:none}
